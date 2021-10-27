@@ -8,7 +8,7 @@ namespace Домашняя_работа
         {
             Console.WriteLine("What is your name?");
             String name = Console.ReadLine();
-            Console.WriteLine($"Привет,{name}, сегодня " + DateTime.Now); // Основное задание
+            Console.WriteLine($"Привет,{name}, сегодня " + DateTime.Now); // Основное домашнее задание
 
             string[] m = new string[100]; // Дополнительное задание
             for (int i = 1; i < m.Length; i++)
