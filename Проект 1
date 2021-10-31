@@ -1,0 +1,19 @@
+using System;
+
+namespace Проект_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите минимальную дневную температуру");
+            double t1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите максимальную дневную температуру");
+            double t2 = Convert.ToDouble(Console.ReadLine());
+            double tср = (t1 + t2) / 2;
+            Console.WriteLine("Среднесуточная температура составляет "+ tср);
+
+
+        }
+    }
+}
