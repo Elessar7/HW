@@ -1,0 +1,23 @@
+using System;
+
+namespace _3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string word = Console.ReadLine();
+            char [] wordrev = word.ToCharArray();
+            Array.Reverse(wordrev);
+            word = new string(wordrev);
+            Console.WriteLine(word);
+            
+
+
+
+
+
+
+        }
+    }
+}
