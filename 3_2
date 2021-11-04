@@ -1,0 +1,24 @@
+using System;
+
+namespace _2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[,] people = new string[5, 2] { { "Oleg","11111111111" }, { "Pol", "22222222222" }, 
+                { "Shon", "33333333333" },
+                { "Pip","44444444444" }, 
+                { "Sam", "555555555555" } };
+            for (int i =0; i < people.GetLength(0); i++)
+            {
+                for (int j = 0; j < people.GetLength(1); j++)
+                {
+                    Console.Write(people[i, j] + ' ');
+                }
+                Console.WriteLine();
+            }
+            
+        }
+    }
+}
