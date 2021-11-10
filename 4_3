@@ -1,0 +1,53 @@
+using System;
+
+namespace _4_3
+{
+    class Program
+    {
+        public enum Season
+        {
+            Winter = 3,
+            Spring,
+            Summer,
+            Autumn,
+
+
+        }
+
+        static void Main(string[] args)
+        {
+            int season = Getn();
+
+            static int Getn()
+            {
+                Console.WriteLine("Введи номер месяца");
+                int n = Convert.ToInt32(Console.ReadLine());
+                if (n <= 3)
+                {
+                    Console.WriteLine("Winter");
+                }
+                if (n > 3 && n <= 6)
+                {
+                    Console.WriteLine("Spring");
+
+                }
+                if (n > 6 && n <= 9)
+                {
+                    Console.WriteLine("Summer");
+                }
+                if (n > 9 && n <= 12)
+                {
+                    Console.WriteLine("Autumn");
+                }
+
+                if (n > 12)
+                {
+                    Console.WriteLine("Ошибка: введите число от 1 до 12");
+                }
+
+                return n;
+
+            }
+        }
+    }
+}
