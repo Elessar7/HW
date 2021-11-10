@@ -1,0 +1,30 @@
+using System;
+
+namespace _4_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+       {
+            
+            int s = Summa();
+            static int Summa ()
+            {
+                Console.WriteLine("Введите числа через пробел");
+                string Line = Console.ReadLine();
+                string[] Line1 = Line.Split(' ');
+                int sum = 0;
+                int[] Line2 = new int[Line1.Length];
+                for (int i = 0; i <= Line2.Length; i++)
+                {
+                    int.TryParse(Line1[i], out Line2[i]);
+                }
+                for (int i = 0; i < Line2.Length; i++)
+                {
+                    sum = sum + Line2[i];
+                }
+
+                return sum;
+            }
+
+        }
